@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обчислювач</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="device-body">
+    <header class="device-top">
+      <span class="device-badge">MODEL DOM-01</span>
+      <h1 class="device-heading">Обчислювач</h1>
+    </header>
+
+    <div class="screen-panel" id="screenPanel">
+      <span class="screen-caption">Значення на табло</span>
+      <div class="screen-readout" id="screenReadout">0</div>
+    </div>
+
+    <div class="fields-row">
+      <div class="field-box">
+        <label for="valA">Число A</label>
+        <input type="text" id="valA" placeholder="0">
+      </div>
+
+      <div class="field-box">
+        <label for="valB">Число B</label>
+        <input type="text" id="valB" placeholder="0">
+      </div>
+    </div>
+
+    <div class="keypad">
+      <button type="button" class="key-op" id="btnPlus">+</button>
+      <button type="button" class="key-op" id="btnMinus">−</button>
+      <button type="button" class="key-op" id="btnTimes">×</button>
+      <button type="button" class="key-op" id="btnSplit">÷</button>
+    </div>
+
+    <button type="button" class="key-reset" id="btnReset">Скинути значення</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
